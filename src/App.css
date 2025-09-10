@@ -543,6 +543,25 @@ input[type="text"] {
   border-bottom: 3px solid gold;
 }
 
+.github-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #24292f;
+  padding: 12px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  z-index: 1000;
+}
+
+.github-btn:hover {
+  transform: scale(1.1);
+  background-color: #444c56;
+}
+
 @media screen and (max-width: 768px) {
   input {
     margin-bottom: 5px;
