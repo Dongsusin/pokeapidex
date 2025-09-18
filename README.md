@@ -1,69 +1,52 @@
-# React + TypeScript + Vite
+# <h1 align="left"><img src="/public/pokeball.jpg" alt="Project Icon" width="40" style="vertical-align:middle;"> PokeAPIdex</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Project Main](/public/main.png)
 
-Currently, two official plugins are available:
+<p align="center">
+React + JavaScript + Vite로 구현한 포켓몬 API 기반 도감 웹사이트  
+</p>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## ✨ 기능 (Features)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- 포켓몬 API 이용하여 도감 정보 불러오기 (이름, 이미지, 타입 등)
+- 반응형 디자인 – 데스크탑과 모바일 모두 지원
+- 빠른 렌더링 – Vite를 사용한 개발/배포 환경 구축
+- 무거움이 적은 구조 – 필요한 컴포넌트만 구성
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## 🚀 데모 (Demo)
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+> ⚙️ **라이브 사이트**:[(https://pokeapidex.netlify.app)](https://pokeapidex.netlify.app)
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🛠️ 기술 스택 (Tech Stack)
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+<p align="center">
+  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
+  <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" />
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
+  <img src="https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
+  <img src="https://img.shields.io/badge/ESLint-4B32C3?style=for-the-badge&logo=eslint&logoColor=white" />
+</p>
+
+---
+
+## 📦 설치 및 실행 (Installation & Usage)
+
+```bash
+# 저장소 클론
+git clone https://github.com/Dongsusin/pokeapidex.git
+
+# 디렉토리 이동
+cd pokeapidex
+
+# 패키지 설치
+npm install
+
+# 개발 서버 실행
+npm run dev
 ```
