@@ -19,7 +19,7 @@ React + JavaScript + Vite로 구현한 포켓몬 API 기반 도감 웹사이트
 
 ## 🚀 데모 (Demo)
 
-> ⚙️ **라이브 사이트**:[(https://pokeapidex.netlify.app)](https://pokeapidex.netlify.app)
+> ⚙️ **라이브 사이트**:[(https://poapidex.netlify.app/)](https://poapidex.netlify.app/)
 
 ---
 
